@@ -129,7 +129,18 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-white;
+  }
+
+  .desc {
+    @apply text-base md:text-lg text-[#353535] leading-relaxed;
   }
 }
