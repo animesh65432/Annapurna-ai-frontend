@@ -8,12 +8,34 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import Image from "next/image";
-import { DishType, micronutrientIcons, optionsforLanguages } from "@/lib/Herosectiondata"
+import { DishTypeOptions, micronutrientIcons, optionsforLanguages } from "@/lib/Herosectiondata"
 import { useEffect, useState } from "react";
 import { placeholders } from "@/lib/Herosectiondata"
+import { RecipeFrom } from "@/schema/RecipeSchema"
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import z from "zod";
+
+type RecipeFromTypes = z.infer<typeof RecipeFrom>
 
 export default function Herosection() {
+    const { handleSubmit, setValue, watch } = useForm({
+        resolver: zodResolver(RecipeFrom),
+        defaultValues: {
+            dish: "",
+            language: "",
+            Nutrient: "",
+            DishType: ""
+        }
+    });
     const [placeholderIndex, setPlaceholderIndex] = useState(0)
+
+    const dish = watch("dish");
+    const language = watch("language");
+    const Nutrient = watch("Nutrient");
+    const DishType = watch("DishType");
+
+
     useEffect(() => {
         const interval = setInterval(() => {
             setPlaceholderIndex((prev) => (prev + 1) % placeholders.length)
@@ -21,8 +43,14 @@ export default function Herosection() {
 
         return () => clearInterval(interval)
     }, [])
+
+    const OnSubmit = async (data: RecipeFromTypes) => {
+        console.log("Form Data:", data);
+    }
+
+
     return (
-        <div className="bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[54vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
+        <form onSubmit={handleSubmit(OnSubmit)} className="bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[54vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
             <div className="relative flex flex-col gap-3 md:gap-2">
                 <div className=" h-10  w-10 sm:h-8 sm:w-8 absolute left-[45%]  md:top-[-24px] lg:top-[-13px]  md:left-[99%] lg:left-[91%] ">
                     <Image src="/assets/dashboard/star.svg" alt="Star Icon" fill />
@@ -47,22 +75,22 @@ export default function Herosection() {
                     <div className="absolute w-4 h-4 top-3 left-2 sm:top-2 sm:left-2 md:left-8 md:top-3 lg:left-3 lg:top-3">
                         <Image src="/assets/dashboard/Vector.svg" alt="InputIcon" fill />
                     </div>
-                    <Input placeholder={placeholders[placeholderIndex]} className="bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
+                    <Input placeholder={placeholders[placeholderIndex]} value={dish} onChange={(e) => setValue("dish", e.target.value)} className="bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe</Button>
                 </div>
                 <div className="flex ml-2 gap-2  md:gap-4 justify-center md:justify-start">
-                    <Select >
-                        <SelectTrigger className=" bg-white text-[#4A4A4A]">
+                    <Select value={DishType} onValueChange={(value) => setValue("DishType", value)}>
+                        <SelectTrigger className={`bg-white  ${DishType ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
                             <SelectValue placeholder="Diet Type" />
                         </SelectTrigger>
-                        <SelectContent className="">
-                            {DishType.map((dish) => (
+                        <SelectContent >
+                            {DishTypeOptions.map((dish) => (
                                 <SelectItem key={dish.value} value={dish.value}>{dish.label}</SelectItem>
                             ))}
                         </SelectContent>
                     </Select>
-                    <Select >
-                        <SelectTrigger className=" bg-white text-[#4A4A4A]">
+                    <Select value={Nutrient} onValueChange={(value) => setValue("Nutrient", value)}>
+                        <SelectTrigger className={`bg-white ${Nutrient ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
                             <SelectValue placeholder="Nutrient Focus" />
                         </SelectTrigger>
                         <SelectContent className="">
@@ -71,8 +99,8 @@ export default function Herosection() {
                             ))}
                         </SelectContent>
                     </Select>
-                    <Select>
-                        <SelectTrigger className=" bg-white text-[#4A4A4A] hidden sm:flex ">
+                    <Select value={language} onValueChange={(value) => setValue("language", value)}>
+                        <SelectTrigger className={`bg-white ${language ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"} hidden sm:flex `}>
                             <SelectValue placeholder="Language" />
                         </SelectTrigger>
                         <SelectContent >
@@ -84,6 +112,6 @@ export default function Herosection() {
                 </div>
             </div>
             <Button className="bg-[#FFD059]  ml-auto mr-auto block md:hidden hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe</Button>
-        </div>
+        </form>
     )
 }

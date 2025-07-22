@@ -1,4 +1,4 @@
-export const DishType = [
+export const DishTypeOptions = [
     { label: " Veg", value: "veg" },
     { label: "Non-Veg", value: "nonveg" },
     { label: "Any", value: "any" }
