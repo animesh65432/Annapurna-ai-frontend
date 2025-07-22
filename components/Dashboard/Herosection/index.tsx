@@ -47,7 +47,7 @@ export default function Herosection() {
                     <div className="absolute w-4 h-4 top-3 left-2 sm:top-2 sm:left-2 md:left-8 md:top-3 lg:left-3 lg:top-3">
                         <Image src="/assets/dashboard/Vector.svg" alt="InputIcon" fill />
                     </div>
-                    <Input placeholder={placeholders[placeholderIndex]} className="bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start placeholder:pl-4 " />
+                    <Input placeholder={placeholders[placeholderIndex]} className="bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe</Button>
                 </div>
                 <div className="flex ml-2 gap-2  md:gap-4 justify-center md:justify-start">
