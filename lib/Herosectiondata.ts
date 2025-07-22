@@ -55,3 +55,15 @@ export const optionsforLanguages = [
     { label: "मणिपुरी", value: "manipuri" },
     { label: "English", value: "english" }
 ];
+export const placeholders = [
+    "e.g. Aloo Paratha",
+    "e.g. Paste biryani recipe",
+    "e.g. Rajma Chawal",
+    "e.g. Write rajma recipe",
+    "e.g. Pav Bhaji",
+    "e.g. Write Dosa recipe",
+    "e.g. Biryani",
+    "e.g. Write Chole Bhature recipe",
+    "e.g. Masoor Dal",
+    "e.g. Paste biryani recipe",
+];

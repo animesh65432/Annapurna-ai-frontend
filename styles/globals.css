@@ -152,3 +152,17 @@ h2 {
     @apply text-base md:text-lg text-[#353535] leading-relaxed;
   }
 }
+
+@layer utilities {
+  @media (max-width: 500px) {
+    .max500\: {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 322px) {
+    .max322\: {
+      font-size: 1.6rem;
+    }
+  }
+}

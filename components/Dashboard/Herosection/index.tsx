@@ -9,15 +9,25 @@ import {
 } from "@/components/ui/select"
 import Image from "next/image";
 import { DishType, micronutrientIcons, optionsforLanguages } from "@/lib/Herosectiondata"
+import { useEffect, useState } from "react";
+import { placeholders } from "@/lib/Herosectiondata"
 
 export default function Herosection() {
+    const [placeholderIndex, setPlaceholderIndex] = useState(0)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setPlaceholderIndex((prev) => (prev + 1) % placeholders.length)
+        }, 2000)
+
+        return () => clearInterval(interval)
+    }, [])
     return (
         <div className="bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[54vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
             <div className="relative flex flex-col gap-3 md:gap-2">
-                <div className=" h-10  w-10 sm:h-8 sm:w-8 absolute left-[50%]  md:top-[-24px] lg:top-[-13px]  md:left-[99%] lg:left-[91%] ">
+                <div className=" h-10  w-10 sm:h-8 sm:w-8 absolute left-[45%]  md:top-[-24px] lg:top-[-13px]  md:left-[99%] lg:left-[91%] ">
                     <Image src="/assets/dashboard/star.svg" alt="Star Icon" fill />
                 </div>
-                <h1 className="text-[#414141] text-center text-[1.6rem] [@media(min-width:321px)]:text-[1.7rem]  [@media(min-width:372px)]:text-[1.9rem] sm:text-3xl md:text-[1.8rem] lg:text-3xl mt-9 md:mt-0 leading-snug">
+                <h1 className="text-[#414141] text-center text-[1.6rem] sm:text-3xl md:text-[1.8rem] lg:text-3xl mt-9 md:mt-0 leading-snug">
                     Amp your recipes
                     <br className="block md:hidden" />
                     <span className="block md:inline mt-2 md:mt-0">
@@ -33,13 +43,16 @@ export default function Herosection() {
                 </div>
             </div>
             <div className="flex flex-col gap-4  w-[90%] md:max-w-[478px] mx-auto">
-                <div className="flex gap-4">
-                    <Input className="bg-white w-[100%] md:w-[380px] lg:w-[341px]" />
+                <div className="flex gap-4 relative">
+                    <div className="absolute w-4 h-4 top-3 left-2 sm:top-2 sm:left-2 md:left-8 md:top-3 lg:left-3 lg:top-3">
+                        <Image src="/assets/dashboard/Vector.svg" alt="InputIcon" fill />
+                    </div>
+                    <Input placeholder={placeholders[placeholderIndex]} className="bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start placeholder:pl-4 " />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe</Button>
                 </div>
-                <div className="flex gap-2  md:gap-4 justify-center md:justify-start">
+                <div className="flex ml-2 gap-2  md:gap-4 justify-center md:justify-start">
                     <Select >
-                        <SelectTrigger className=" bg-white text-[#4A4A4A] ">
+                        <SelectTrigger className=" bg-white text-[#4A4A4A]">
                             <SelectValue placeholder="Diet Type" />
                         </SelectTrigger>
                         <SelectContent className="">
@@ -49,7 +62,7 @@ export default function Herosection() {
                         </SelectContent>
                     </Select>
                     <Select >
-                        <SelectTrigger className=" bg-white text-[#4A4A4A] ">
+                        <SelectTrigger className=" bg-white text-[#4A4A4A]">
                             <SelectValue placeholder="Nutrient Focus" />
                         </SelectTrigger>
                         <SelectContent className="">
@@ -59,10 +72,10 @@ export default function Herosection() {
                         </SelectContent>
                     </Select>
                     <Select>
-                        <SelectTrigger className=" bg-white text-[#4A4A4A] ">
-                            <SelectValue placeholder="Nutrient Focus" />
+                        <SelectTrigger className=" bg-white text-[#4A4A4A] hidden sm:flex ">
+                            <SelectValue placeholder="Language" />
                         </SelectTrigger>
-                        <SelectContent className="">
+                        <SelectContent >
                             {optionsforLanguages.map((Language) => (
                                 <SelectItem key={Language.label} value={Language.label}>{Language.label}</SelectItem>
                             ))}
