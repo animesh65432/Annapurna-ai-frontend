@@ -15,6 +15,7 @@ import { RecipeFrom } from "@/schema/RecipeSchema"
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import z from "zod";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 
 type RecipeFromTypes = z.infer<typeof RecipeFrom>
 
@@ -59,10 +60,11 @@ export default function Herosection() {
                     Amp your recipes
                     <br className="block md:hidden" />
                     <span className="block md:inline mt-2 md:mt-0">
-                        <span className="ml-2">With</span>
-                        <span className="text-[#168B5D]"> Healthy twists</span>
+                        <span className="ml-2">With</span>{" "}
+                        <TextGenerateEffect words="Healthy twists" className="text-[#168B5D] inline-block" />
                     </span>
                 </h1>
+
 
                 <div className="text-[#535353] text-center">Generate AI Powered Recipes
                     <br className="sm:hidden block " />
