@@ -24,7 +24,7 @@ export default function Header() {
                 <Sheet>
                     <SheetTrigger>
                         <div className="relative w-8 h-8">
-                            <img
+                            <Image
                                 src="/assets/dashboard/menu.svg"
                                 alt="Menu Icon"
                                 className="w-full h-full object-cover"

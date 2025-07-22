@@ -18,8 +18,9 @@ import z from "zod";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 import { Getsuggestions } from "@/api/ai";
 import { debounce } from "@/lib/usedebouce";
+import Suggestions from "../Suggestions";
 
-type RecipeFromTypes = z.infer<typeof RecipeFrom>
+export type RecipeFromTypes = z.infer<typeof RecipeFrom>
 
 export default function Herosection() {
     const { handleSubmit, setValue, watch } = useForm({
@@ -49,20 +50,18 @@ export default function Herosection() {
         }
         return () => clearInterval(interval)
     }, [dish])
+
     const GenerateSuggestionByKey = debounce(async (dish: string) => {
         const response = await Getsuggestions(dish) as { suggestions: string[] }
         setsuggestions(response.suggestions)
     }, 300)
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        if (dish.length === 0) {
-            return
-        }
-        else {
-            console.log("clicked")
-            GenerateSuggestionByKey(dish)
-        }
-    }, [dish])
+        if (dish.length === 0) return;
+        console.log("clicked");
+        GenerateSuggestionByKey(dish);
+    }, [dish]);
 
 
     const OnSubmit = async (data: RecipeFromTypes) => {
@@ -96,7 +95,10 @@ export default function Herosection() {
                     <div className="absolute w-4 h-4 top-3 left-2 sm:top-2 sm:left-2 md:left-8 md:top-3 lg:left-3 lg:top-3">
                         <Image src="/assets/dashboard/Vector.svg" alt="InputIcon" fill />
                     </div>
-                    <Input placeholder={placeholders[placeholderIndex]} value={dish} onChange={(e) => setValue("dish", e.target.value)} className="bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
+                    {suggestions.length > 0 && dish.length > 0 && (
+                        <Suggestions suggestions={suggestions} setValue={setValue} />
+                    )}
+                    <Input placeholder={placeholders[placeholderIndex]} value={dish} onChange={(e) => setValue("dish", e.target.value)} className=" bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe</Button>
                 </div>
                 <div className="flex ml-2 gap-2  md:gap-4 justify-center md:justify-start">
