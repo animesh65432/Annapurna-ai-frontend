@@ -37,7 +37,7 @@ export default function Herosection() {
                     <Input className="bg-white w-[100%] md:w-[380px] lg:w-[341px]" />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe</Button>
                 </div>
-                <div className="flex gap-2  md:gap-4 ">
+                <div className="flex gap-2  md:gap-4 justify-center md:justify-start">
                     <Select >
                         <SelectTrigger className=" bg-white text-[#4A4A4A] ">
                             <SelectValue placeholder="Diet Type" />
