@@ -16,6 +16,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import z from "zod";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
+import { Getsuggestions } from "@/api/ai";
+import { debounce } from "@/lib/usedebouce";
 
 type RecipeFromTypes = z.infer<typeof RecipeFrom>
 
@@ -30,6 +32,7 @@ export default function Herosection() {
         }
     });
     const [placeholderIndex, setPlaceholderIndex] = useState(0)
+    const [suggestions, setsuggestions] = useState<string[]>([])
 
     const dish = watch("dish");
     const language = watch("language");
@@ -41,27 +44,43 @@ export default function Herosection() {
         const interval = setInterval(() => {
             setPlaceholderIndex((prev) => (prev + 1) % placeholders.length)
         }, 2000)
-
+        if (dish.length > 0) {
+            clearInterval(interval)
+        }
         return () => clearInterval(interval)
-    }, [])
+    }, [dish])
+    const GenerateSuggestionByKey = debounce(async (dish: string) => {
+        const response = await Getsuggestions(dish) as { suggestions: string[] }
+        setsuggestions(response.suggestions)
+    }, 300)
+
+    useEffect(() => {
+        if (dish.length === 0) {
+            return
+        }
+        else {
+            console.log("clicked")
+            GenerateSuggestionByKey(dish)
+        }
+    }, [dish])
+
 
     const OnSubmit = async (data: RecipeFromTypes) => {
         console.log("Form Data:", data);
     }
 
-
+    console.log(dish)
     return (
-        <form onSubmit={handleSubmit(OnSubmit)} className="bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[54vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
+        <form onSubmit={handleSubmit(OnSubmit)} className="bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[57vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
             <div className="relative flex flex-col gap-3 md:gap-2">
                 <div className=" h-10  w-10 sm:h-8 sm:w-8 absolute left-[45%]  md:top-[-24px] lg:top-[-13px]  md:left-[99%] lg:left-[91%] ">
                     <Image src="/assets/dashboard/star.svg" alt="Star Icon" fill />
                 </div>
-                <h1 className="text-[#414141] text-center text-[1.6rem] sm:text-3xl md:text-[1.8rem] lg:text-3xl mt-9 md:mt-0 leading-snug">
+                <h1 className="text-[#414141] text-center text-[1.6rem] sm:text-3xl md:text-[1.8rem] lg:text-3xl mt-9 md:mt-0 ">
                     Amp your recipes
-                    <br className="block md:hidden" />
-                    <span className="block md:inline mt-2 md:mt-0">
-                        <span className="ml-2">With</span>{" "}
-                        <TextGenerateEffect words="Healthy twists" className="text-[#168B5D] inline-block" />
+                    <span className="block md:inline  ">
+                        <span className="ml-2">With</span>
+                        <TextGenerateEffect words="Healthy twists" className="ml-2 text-[#168B5D] inline-block" />
                     </span>
                 </h1>
 
