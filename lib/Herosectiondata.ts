@@ -67,7 +67,7 @@ export const placeholders = [
     "e.g. Masoor Dal",
     "e.g. Paste biryani recipe",
 ];
-export const popularindianFoods = [
+export const trendingRecipes = [
     {
         name: "Aloo Paratha",
         img: "/dashboard/allupartha.jpg",

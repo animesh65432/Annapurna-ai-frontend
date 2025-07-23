@@ -1,4 +1,4 @@
-import { popularindianFoods } from "@/lib/Herosectiondata"
+import { trendingRecipes } from "@/lib/Herosectiondata"
 import Recipe from "../Recipe"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
@@ -10,7 +10,7 @@ export default function TrendingRecipes() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setRecipeIndex(prevIndex => (prevIndex + 1) % popularindianFoods.length)
+            setRecipeIndex(prevIndex => (prevIndex + 1) % trendingRecipes.length)
         }, 5000)
 
         return () => clearInterval(interval)
@@ -21,10 +21,7 @@ export default function TrendingRecipes() {
         const handleResize = () => {
             const width = window.innerWidth
             console.log("Width:", width)
-
-            if (width < 768) {
-                setIsendNumber(1)
-            } else if (width < 1024) {
+            if (width < 1024) {
                 setIsendNumber(2)
             } else {
                 setIsendNumber(3)
@@ -38,13 +35,13 @@ export default function TrendingRecipes() {
 
 
     const getRecipes = () => {
-        const totalRecipes = popularindianFoods.length
+        const totalRecipes = trendingRecipes.length
         const recipesToShow = IsendNumber
 
         const recipes = []
         for (let i = 0; i < recipesToShow; i++) {
             const index = (recipeIndex + i) % totalRecipes
-            recipes.push(popularindianFoods[index])
+            recipes.push(trendingRecipes[index])
         }
 
         return recipes
@@ -52,7 +49,7 @@ export default function TrendingRecipes() {
 
     const recipes = getRecipes()
     return (
-        <div className=" hidden md:flex flex-col gap-4 w-[85%]  md:max-w-[75%] lg:max-w-[740px] xl:max-w-[1120px] ml-auto mr-auto">
+        <div className=" hidden sm:flex flex-col gap-4 w-[85%]  md:max-w-[75%] lg:max-w-[740px] xl:max-w-[1120px] ml-auto mr-auto">
             <h1 className="text-[#565656] font-bold text-start text-[1.6rem]">Trending recipes</h1>
             <div className="flex gap-10">
                 <div className="flex w-full lg:w-fit justify-between gap-6 lg:gap-4 xl:gap-6">

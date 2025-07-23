@@ -56,7 +56,7 @@ export default function Herosection() {
         setsuggestions(response.suggestions)
     }, 300)
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     useEffect(() => {
         if (dish.length === 0) return;
         console.log("clicked");
@@ -67,11 +67,8 @@ export default function Herosection() {
     const OnSubmit = async (data: RecipeFromTypes) => {
         console.log("Form Data:", data);
     }
-
-
-    console.log(dish)
     return (
-        <form onSubmit={handleSubmit(OnSubmit)} className="border-1 border-[#DEDEDE] bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[57vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
+        <form onSubmit={handleSubmit(OnSubmit)} className="border-1 border-[#DEDEDE] bg-[url('/dashboard/Hero.png')] bg-cover bg-center bg-[#F5EFD8] ml-auto mr-auto w-[90%] sm:w-[80%] md:w-[670px] lg:w-[737px] h-[59vh] sm:h-[50vh] md:h-[290px] lg:h-[296px] rounded-2xl p-5 md:p-14 lg:p-8 flex flex-col gap-6">
             <div className="relative flex flex-col gap-3 md:gap-2">
                 <div className=" h-10  w-10 sm:h-8 sm:w-8 absolute left-[45%]  md:top-[-24px] lg:top-[-13px]  md:left-[99%] lg:left-[91%] ">
                     <Image src="/assets/dashboard/star.svg" alt="Star Icon" fill />
@@ -85,7 +82,8 @@ export default function Herosection() {
                 </h1>
 
 
-                <div className="text-[#535353] text-center">Generate AI Powered Recipes
+                <div className="text-[#535353] text-center">
+                    Generate AI Powered Recipes
                     <br className="sm:hidden block " />
                     <span className="sm:ml-1 ml-0">
                         Just One Click!</span>

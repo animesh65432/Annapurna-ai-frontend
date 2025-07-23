@@ -10,7 +10,7 @@ type Props = {
 export default function Recipe({ name, time, when, image, after }: Props) {
     return (
         <div className="flex flex-col  gap-2">
-            <div className="relative  w-[32vw] lg:w-[240px] xl:w-[260px] h-[150px] lg:h-[141px]">
+            <div className="relative w-[37vw]   md:w-[32vw] lg:w-[240px] xl:w-[260px] h-[150px] lg:h-[141px]">
                 <Image src={image} alt={name} fill className="object-cover rounded-md" />
 
                 <div className="absolute top-[75%] right-2 flex items-center gap-1 bg-white bg-opacity-70 text-[#006C41] px-2 py-1 rounded-md text-sm font-medium whitespace-nowrap">
