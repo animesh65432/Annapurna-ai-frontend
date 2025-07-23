@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export default function TrendingRecipes() {
     const [recipeIndex, setRecipeIndex] = useState(0)
-    const [isMobile, setIsMobile] = useState(false)
+    const [IsendNumber, setIsendNumber] = useState<number>(3)
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -19,23 +19,27 @@ export default function TrendingRecipes() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 1024)
+            const width = window.innerWidth
+            console.log("Width:", width)
+
+            if (width < 768) {
+                setIsendNumber(1)
+            } else if (width < 1024) {
+                setIsendNumber(2)
+            } else {
+                setIsendNumber(3)
+            }
         }
 
-
         handleResize()
-
-
         window.addEventListener('resize', handleResize)
-
-
         return () => window.removeEventListener('resize', handleResize)
     }, [])
 
 
     const getRecipes = () => {
         const totalRecipes = popularindianFoods.length
-        const recipesToShow = isMobile ? 2 : 3
+        const recipesToShow = IsendNumber
 
         const recipes = []
         for (let i = 0; i < recipesToShow; i++) {
@@ -47,12 +51,11 @@ export default function TrendingRecipes() {
     }
 
     const recipes = getRecipes()
-
     return (
-        <div className="flex flex-col gap-4 w-[85%]  md:max-w-[75%] lg:max-w-[740px] xl:max-w-[1120px] ml-auto mr-auto">
+        <div className=" hidden md:flex flex-col gap-4 w-[85%]  md:max-w-[75%] lg:max-w-[740px] xl:max-w-[1120px] ml-auto mr-auto">
             <h1 className="text-[#565656] font-bold text-start text-[1.6rem]">Trending recipes</h1>
             <div className="flex gap-10">
-                <div className="flex w-full lg:w-fit justify-between lg:gap-6">
+                <div className="flex w-full lg:w-fit justify-between gap-6 lg:gap-4 xl:gap-6">
                     {
                         recipes.map((recipe, index) => (
                             <motion.div
