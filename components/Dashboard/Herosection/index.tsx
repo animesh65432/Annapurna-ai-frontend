@@ -96,15 +96,7 @@ export default function Herosection() {
                         <Suggestions suggestions={suggestions} setValue={setValue} />
                     )}
                     <Input placeholder={placeholders[placeholderIndex]} value={dish} onChange={(e) => setValue("dish", e.target.value)} className=" bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
-                    <Button className="bg-[#FFD059] hidden md:block hover:bg-[#f6d47e] text-[#404040] lg:max-w-[121px]">See Recipe
-                        <a href="#_" className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50">
-                            <span className="absolute left-0 block w-full h-0 transition-all bg-indigo-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
-                            <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                            </span>
-                            <span className="relative">Button Text</span>
-                        </a>
-                    </Button>
+                    <Button className="bg-[#FFD059] hidden md:block hover:bg-[#F2C100] text-[#404040] lg:max-w-[121px] shadow-md">See Recipe</Button>
                 </div>
                 <div className="flex ml-2 gap-2  md:gap-4 justify-center md:justify-start">
                     <Select value={DishType} onValueChange={(value) => setValue("DishType", value)}>

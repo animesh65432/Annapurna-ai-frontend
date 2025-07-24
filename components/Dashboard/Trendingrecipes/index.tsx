@@ -79,7 +79,7 @@ export default function TrendingRecipes() {
                         <div>Discover More Indian </div>
                         <div className="text-[#FFD059]">Recipe With AI</div>
                     </div>
-                    <Button className="bg-[#FFD059] hover:bg-[#e6c94c] w-[40%] text-[#404040]">See More</Button>
+                    <Button className="bg-[#FFD059] hidden md:block hover:bg-[#F2C100]  lg:max-w-[121px] shadow-2xl w-[40%] text-[#404040]">See More</Button>
                 </div>
             </div>
         </div>
