@@ -6,7 +6,7 @@ import Discover from "./Discover"
 import MobileTrendingRecipes from "./MobileTrendingRecipes"
 export default function Dashboard() {
     return (
-        <div className="bg-[url('/dashboard/backgroundimage.png')] min-h-dvh overflow-y-auto w-full flex flex-col gap-5 sm:gap-7">
+        <div className="bg-[url('/dashboard/backgroundimage.png')] min-h-dvh overflow-y-auto w-full flex flex-col xl:justify-around gap-5 xl:gap-0 pb-0 xl:pb-4">
             <Header />
             <Herosection />
             <TrendingRecipes />

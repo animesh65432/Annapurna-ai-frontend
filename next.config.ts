@@ -1,11 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
+// Import the i18n config
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

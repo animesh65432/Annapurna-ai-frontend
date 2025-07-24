@@ -28,7 +28,7 @@ export default function MobileTrendingRecipes() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-[80%] mx-auto text-[#168B5D] flex items-center justify-center gap-1 ">
+                            <div className="w-[80%] mx-auto text-[#168B5D] flex items-center justify-between  ">
                                 See healthier Version
                                 <div className="relative w-8 h-8">
                                     <Image alt="arrow left" src="/assets/dashboard/arrow_left_alt.svg" fill />
