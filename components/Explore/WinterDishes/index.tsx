@@ -30,6 +30,7 @@ export default function WinterDishes() {
                             className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
                         >
                             <Dish
+                                index={index}
                                 name={dish.name}
                                 variant={dish.variant}
                                 img={dish.img}
