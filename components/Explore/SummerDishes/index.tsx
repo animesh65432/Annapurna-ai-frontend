@@ -12,7 +12,7 @@ import { ChevronRight } from "lucide-react"
 export default function SummerDishes() {
     const Summerdishs = indianDishes.filter((dish) => dish.season === "summer")
     return (
-        <div className="flex flex-col gap-5 ml-auto mr-auto pt-5 w-[85%] sm:w-[80%] lg:w-[85%]">
+        <div className="bg-white flex flex-col gap-5 ml-auto mr-auto pt-5 w-[85%] sm:w-[80%] lg:w-[85%]">
             <h1 className="text-[#565656] font-bold text-xl sm:text-2xl mb-4 flex items-center">
                 Non vegetarian dishes
                 <ChevronRight />
@@ -28,7 +28,7 @@ export default function SummerDishes() {
                     {Summerdishs.map((dish, index) => (
                         <CarouselItem
                             key={index}
-                            className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/6"
+                            className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
                         >
                             <Dish
                                 name={dish.name}
