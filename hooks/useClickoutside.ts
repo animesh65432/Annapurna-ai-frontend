@@ -5,12 +5,16 @@ export function useClickOutside<T extends HTMLElement>(
     ref: RefObject<T | null>,
     handler: (event: MouseEvent) => void
 ) {
-    console.log("click")
     useEffect(() => {
         const listener = (event: MouseEvent) => {
-            if (!ref.current || ref.current.contains(event.target as Node)) {
-                return;
-            }
+            const target = event.target as Node;
+
+
+            if (!ref.current || ref.current.contains(target)) return;
+
+            const isInDropdown = (target as HTMLElement).closest("[data-ignore-outside-click]");
+            if (isInDropdown) return;
+
             handler(event);
         };
 

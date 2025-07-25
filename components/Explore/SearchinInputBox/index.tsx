@@ -4,15 +4,49 @@ import { DishTypeOptions, micronutrientIcons } from "@/lib/Herosectiondata"
 import InputIcon from "@/public/assets/dashboard/Vector.svg"
 import Image from "next/image"
 import { Search } from "lucide-react"
+import { useExploreContext } from "@/context"
+import { useEffect, useState } from "react"
+import { indianDishes } from "@/lib/Herosectiondata"
 
 export default function SearchinInputBox() {
+    const [dish, setdish] = useState<string>("")
+    const [DietType, SetDietType] = useState<string>("")
+    const [Nutrient, setNutrient] = useState<string>("")
+    const { setIsfiltering, setdish: setIndiandish, dish: Indiandish } = useExploreContext()
+    useEffect(() => {
+        const isFiltering = dish.length > 0 || Nutrient.length > 0 || DietType.length > 0;
+        setIsfiltering(isFiltering);
 
+        if (isFiltering) {
+            const filterdish = indianDishes.filter((d) => {
+                const matchName = dish ? d.name.toLowerCase().includes(dish.toLowerCase()) : true;
+                const matchDiet =
+                    DietType && DietType.toLowerCase() === "all"
+                        ? d.diettype.toLowerCase() === DietType.toLowerCase()
+                        : d;
+
+                const matchNutrient = Nutrient
+                    ? Array.isArray(d.variant) && d.variant.some((n) =>
+                        n.toLowerCase().includes(Nutrient.toLowerCase())
+                    )
+                    : true;
+
+                return matchName && matchDiet && matchNutrient;
+            });
+
+            setIndiandish(filterdish);
+        } else {
+            setIndiandish(Indiandish);
+        }
+    }, [dish, DietType, Nutrient]);
+
+    console.log(Indiandish)
     return (
         <div className="w-full flex justify-center ">
             <div className=" hidden md:flex  rounded-4xl h-[8vh] items-center w-[75%] lg:w-[63%] xl:w-[55%] bg-white shadow-md border-2 border-neutral-100 text-black">
                 <Image src={InputIcon} alt="inputicon" className="w-[2vw] h-[3vh] ml-5" />
-                <Input className="border-0 bg-transparent shadow-none  w-[40%] lg:w-[45%] " placeholder="Write Dish name" />
-                <Select >
+                <Input value={dish} onChange={(e) => setdish(e.target.value)} className="border-0 bg-transparent shadow-none  w-[40%] lg:w-[45%] " placeholder="Write Dish name" />
+                <Select value={DietType} onValueChange={(value) => SetDietType(value)}>
                     <SelectTrigger className="border-t-0 border-r-0 border-b-0  bg-transparent shadow-none w-[20%]">
                         <SelectValue placeholder="Diet Type" />
                     </SelectTrigger>
@@ -22,7 +56,7 @@ export default function SearchinInputBox() {
                         ))}
                     </SelectContent>
                 </Select>
-                <Select >
+                <Select value={Nutrient} onValueChange={(value) => setNutrient(value)} >
                     <SelectTrigger className="border-t-0 border-r-0 border-b-0 rounded-0 bg-transparent shadow-none w-[20%]">
                         <SelectValue placeholder="Nutrient Focus" />
                     </SelectTrigger>
