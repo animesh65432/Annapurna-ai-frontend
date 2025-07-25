@@ -10,7 +10,7 @@ export default function Dish({ name, variant, img }: Props) {
             <div className="relative w-full h-[80%] overflow-hidden rounded-md p-0">
                 <Image src={img} fill alt="dish" />
             </div>
-            <div className="text-[#434343]  text-[0.9rem] sm:text-[1rem] whitespace-break-spaces">
+            <div className="text-[#434343]  text-[0.9rem] sm:text-[1rem] whitespace-nowrap">
                 {name}
             </div>
         </div>
