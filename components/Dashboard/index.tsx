@@ -1,5 +1,5 @@
 "use client"
-import Header from "./Header"
+import Header from "@/components/Dashboard/Header"
 import Herosection from "./Herosection"
 import TrendingRecipes from "./Trendingrecipes"
 import Discover from "./Discover"

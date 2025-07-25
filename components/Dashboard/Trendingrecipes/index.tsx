@@ -3,10 +3,14 @@ import Recipe from "../Recipe"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import { useRouter } from "next/router"
 
 export default function TrendingRecipes() {
     const [recipeIndex, setRecipeIndex] = useState(0)
     const [IsendNumber, setIsendNumber] = useState<number>(3)
+    const router = useRouter();
+
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -47,6 +51,10 @@ export default function TrendingRecipes() {
         return recipes
     }
 
+    const handleGoToExplore = () => {
+        router.push('/Explore');
+    };
+
     const recipes = getRecipes()
     return (
         <div className=" hidden sm:flex flex-col gap-4 w-[85%]  md:max-w-[75%] lg:max-w-[740px] xl:max-w-[1120px] ml-auto mr-auto">
@@ -79,7 +87,7 @@ export default function TrendingRecipes() {
                         <div>Discover More Indian </div>
                         <div className="text-[#FFD059]">Recipe With AI</div>
                     </div>
-                    <Button className="bg-[#FFD059] hidden md:block hover:bg-[#F2C100]  lg:max-w-[121px] shadow-2xl w-[40%] text-[#404040]">See More</Button>
+                    <Button onClick={handleGoToExplore} className="bg-[#FFD059] hidden md:block hover:bg-[#F2C100]  shadow-2xl w-[50%] text-[#404040]">See More</Button>
                 </div>
             </div>
         </div>

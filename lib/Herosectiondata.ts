@@ -384,3 +384,845 @@ export const trendingRecipes = [
         after: "40% less fat"
     }
 ];
+export const indianDishes = [
+    // North Indian Dishes
+    {
+        name: "Butter Chicken",
+        diettype: "nonveg",
+        variant: ["protein", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Chicken, butter, tomatoes, cream, onions, garlic, ginger, garam masala, fenugreek leaves",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Dal Makhani",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Black lentils, kidney beans, butter, cream, tomatoes, onions, garlic, ginger, spices",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Paneer Tikka",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Paneer, yogurt, bell peppers, onions, ginger-garlic paste, red chili powder, garam masala",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Chicken Tikka Masala",
+        diettype: "nonveg",
+        variant: ["protein", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Chicken tikka, tomatoes, cream, onions, garlic, ginger, spices, cilantro",
+        img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Aloo Gobi",
+        diettype: "veg",
+        variant: ["fiber", "vitamin-c"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Potatoes, cauliflower, onions, tomatoes, ginger, turmeric, cumin, coriander",
+        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Rajma",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Kidney beans, onions, tomatoes, ginger, garlic, cumin, coriander, garam masala",
+        img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Chole Bhature",
+        diettype: "veg",
+        variant: ["protein", "carbs"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Chickpeas, all-purpose flour, yogurt, baking powder, onions, tomatoes, spices",
+        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Kadhi Pakora",
+        diettype: "veg",
+        variant: ["protein", "probiotic"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Gram flour, yogurt, onions, ginger, green chilies, turmeric, cumin seeds",
+        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Sarson da Saag",
+        diettype: "veg",
+        variant: ["iron", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mustard greens, spinach, bathua, onions, ginger, garlic, green chilies, cornmeal",
+        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Makki di Roti",
+        diettype: "veg",
+        variant: ["fiber", "carbs"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Corn flour, water, salt, ghee for cooking",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Rogan Josh",
+        diettype: "nonveg",
+        variant: ["protein", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mutton, yogurt, onions, ginger, garlic, red chilies, fennel powder, garam masala",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Palak Paneer",
+        diettype: "veg",
+        variant: ["iron", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Spinach, paneer, onions, tomatoes, ginger, garlic, cream, spices",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Matar Paneer",
+        diettype: "veg",
+        variant: ["protein", "vitamin-c"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Green peas, paneer, onions, tomatoes, ginger, garlic, garam masala, cream",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Shahi Paneer",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Paneer, cashews, cream, onions, tomatoes, ginger, garlic, royal spices",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Chicken Curry",
+        diettype: "nonveg",
+        variant: ["protein", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Chicken, onions, tomatoes, ginger, garlic, turmeric, red chili powder, garam masala",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+
+    // South Indian Dishes
+    {
+        name: "Idli Sambar",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice, urad dal, toor dal, vegetables, tamarind, curry leaves, mustard seeds, spices",
+        img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Dosa",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice, urad dal, fenugreek seeds, salt, oil for cooking",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Uttapam",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Dosa batter, onions, tomatoes, green chilies, coriander, curry leaves",
+        img: "https://images.unsplash.com/photo-1630294277842-4d98b22cbcfc?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Vada",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Urad dal, ginger, green chilies, curry leaves, black pepper, asafoetida",
+        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Rasam",
+        diettype: "veg",
+        variant: ["vitamin-c", "antioxidants"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Tomatoes, tamarind, toor dal, black pepper, cumin, curry leaves, coriander",
+        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Coconut Rice",
+        diettype: "veg",
+        variant: ["carbs", "healthy-fats"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice, fresh coconut, curry leaves, mustard seeds, urad dal, green chilies",
+        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Curd Rice",
+        diettype: "veg",
+        variant: ["probiotic", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice, yogurt, mustard seeds, curry leaves, ginger, green chilies, coriander",
+        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Fish Curry",
+        diettype: "nonveg",
+        variant: ["protein", "omega-3"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Fish, coconut milk, tamarind, curry leaves, mustard seeds, red chilies, turmeric",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Appam",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice, coconut milk, palm toddy or yeast, sugar, salt",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Puttu",
+        diettype: "veg",
+        variant: ["fiber", "carbs"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice flour, fresh coconut, salt, water",
+        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Masala Dosa",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Dosa batter, potatoes, onions, mustard seeds, curry leaves, turmeric, green chilies",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Rava Dosa",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Semolina, rice flour, all-purpose flour, yogurt, onions, ginger, green chilies",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Mysore Pak",
+        diettype: "veg",
+        variant: ["carbs", "healthy-fats"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Gram flour, ghee, sugar, cardamom powder",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Payasam",
+        diettype: "veg",
+        variant: ["carbs", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice or vermicelli, milk, jaggery, cardamom, cashews, raisins, ghee",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Upma",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Semolina, onions, green chilies, ginger, curry leaves, mustard seeds, cashews",
+        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+    },
+
+    // West Indian Dishes
+    {
+        name: "Pav Bhaji",
+        diettype: "veg",
+        variant: ["fiber", "vitamin-c"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mixed vegetables, butter, onions, tomatoes, pav bhaji masala, bread rolls",
+        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Vada Pav",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Potatoes, gram flour, green chilies, ginger, bread rolls, chutneys",
+        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Dhokla",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Gram flour, yogurt, ginger, green chilies, mustard seeds, curry leaves, coriander",
+        img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Khandvi",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Gram flour, yogurt, ginger, green chilies, mustard seeds, curry leaves, coconut",
+        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Gujarati Thali",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Dal, sabzi, roti, rice, farsan, pickles, papad, sweet, buttermilk",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Undhiyu",
+        diettype: "veg",
+        variant: ["fiber", "antioxidants"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mixed winter vegetables, methi muthiya, groundnuts, coconut, spices",
+        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Fafda",
+        diettype: "veg",
+        variant: ["protein", "carbs"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Gram flour, turmeric, carom seeds, black pepper, oil for frying",
+        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Handvo",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mixed lentils, rice, bottle gourd, yogurt, ginger, green chilies, sesame seeds",
+        img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Puran Poli",
+        diettype: "veg",
+        variant: ["protein", "carbs"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Wheat flour, chana dal, jaggery, cardamom, nutmeg, ghee",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Misal Pav",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mixed sprouts, onions, tomatoes, misal masala, farsan, bread rolls, chutneys",
+        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Thepla",
+        diettype: "veg",
+        variant: ["fiber", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Wheat flour, fenugreek leaves, yogurt, ginger, green chilies, turmeric, oil",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Khakhra",
+        diettype: "veg",
+        variant: ["fiber", "carbs"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Wheat flour, oil, salt, carom seeds, sesame seeds",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Dabeli",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Potatoes, dabeli masala, tamarind chutney, peanuts, pomegranate, sev, bread",
+        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Kachori",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "All-purpose flour, lentil filling, ginger, green chilies, spices, oil for frying",
+        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Jalebi",
+        diettype: "veg",
+        variant: ["carbs", "sugar"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "All-purpose flour, yogurt, saffron, sugar, cardamom, lemon juice, ghee",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+
+    // East Indian Dishes
+    {
+        name: "Fish Fry",
+        diettype: "nonveg",
+        variant: ["protein", "omega-3"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Fish fillets, turmeric, red chili powder, ginger-garlic paste, mustard oil, rice flour",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Shorshe Ilish",
+        diettype: "nonveg",
+        variant: ["protein", "omega-3"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Hilsa fish, mustard seeds, mustard oil, green chilies, turmeric, salt",
+        img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Aloo Posto",
+        diettype: "veg",
+        variant: ["fiber", "healthy-fats"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Potatoes, poppy seeds, mustard oil, green chilies, turmeric, salt",
+        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Kosha Mangsho",
+        diettype: "nonveg",
+        variant: ["protein", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Mutton, onions, ginger-garlic paste, yogurt, garam masala, bay leaves, ghee",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Chingri Malai Curry",
+        diettype: "nonveg",
+        variant: ["protein", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Prawns, coconut milk, onions, ginger, garlic, green chilies, turmeric, garam masala",
+        img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Mishti Doi",
+        diettype: "veg",
+        variant: ["protein", "probiotic"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Milk, yogurt culture, jaggery or sugar, cardamom",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Rasgulla",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Chenna (cottage cheese), sugar, water, cardamom, rose water",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Sandesh",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Fresh chenna, powdered sugar, cardamom, pistachios, saffron",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Luchi",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "All-purpose flour, salt, ghee, oil for frying",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Begun Bharta",
+        diettype: "veg",
+        variant: ["fiber", "antioxidants"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Eggplant, onions, tomatoes, ginger, garlic, green chilies, mustard oil, spices",
+        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+    },
+
+    // Street Foods
+    {
+        name: "Samosa",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "All-purpose flour, potatoes, peas, onions, cumin, coriander, garam masala, oil",
+        img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Pakora",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Gram flour, onions, potatoes, spinach, green chilies, ginger, spices, oil",
+        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Chaat",
+        diettype: "veg",
+        variant: ["carbs", "vitamin-c"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Crispy items, potatoes, onions, chutneys, yogurt, chaat masala, sev, coriander",
+        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Bhel Puri",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Puffed rice, sev, onions, tomatoes, chutneys, coriander, lemon juice",
+        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Pani Puri",
+        diettype: "veg",
+        variant: ["carbs", "vitamin-c"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Semolina, wheat flour, tamarind, mint, coriander, black salt, chickpeas, potatoes",
+        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+    },
+
+    // Rice Dishes
+    {
+        name: "Biryani",
+        diettype: "nonveg",
+        variant: ["protein", "carbs"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Basmati rice, meat, yogurt, onions, saffron, ghee, biryani spices, mint, coriander",
+        img: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Vegetable Biryani",
+        diettype: "veg",
+        variant: ["fiber", "carbs"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Basmati rice, mixed vegetables, yogurt, onions, saffron, ghee, biryani spices, mint",
+        img: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Pulao",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Basmati rice, vegetables, whole spices, ghee, onions, ginger, garlic",
+        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Jeera Rice",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "all-season",
+        availability: "all-season",
+        ingredients: "Basmati rice, cumin seeds, ghee, bay leaves, salt, water",
+        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Lemon Rice",
+        diettype: "veg",
+        variant: ["carbs", "vitamin-c"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Rice, lemon juice, mustard seeds, curry leaves, turmeric, peanuts, green chilies",
+        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+    },
+
+    // Bread Items
+    {
+        name: "Naan",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "all-season",
+        availability: "all-season",
+        ingredients: "All-purpose flour, yogurt, baking powder, salt, ghee, milk",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Roti",
+        diettype: "veg",
+        variant: ["fiber", "carbs"],
+        season: "all-season",
+        availability: "all-season",
+        ingredients: "Whole wheat flour, water, salt, ghee or oil",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Paratha",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Whole wheat flour, ghee, water, salt, stuffing (optional)",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Kulcha",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "All-purpose flour, yogurt, baking powder, onions, coriander, ghee",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Bhatura",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "All-purpose flour, yogurt, baking powder, semolina, oil for frying",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Poori",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "all-season",
+        availability: "all-season",
+        ingredients: "Whole wheat flour, salt, oil, water for kneading, oil for frying",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+
+    // Dal Dishes
+    {
+        name: "Yellow Dal",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "all-season",
+        availability: "all-season",
+        ingredients: "Toor dal, turmeric, salt, ginger, green chilies, curry leaves, mustard seeds",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Masoor Dal",
+        diettype: "veg",
+        variant: ["protein", "iron"],
+        season: "all-season",
+        availability: "all-season",
+        ingredients: "Red lentils, onions, tomatoes, ginger, garlic, turmeric, cumin",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Moong Dal",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Moong dal, turmeric, ginger, green chilies, curry leaves, mustard seeds",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Chana Dal",
+        diettype: "veg",
+        variant: ["protein", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Bengal gram dal, onions, tomatoes, ginger, garlic, garam masala, ghee",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+
+    // Desserts
+    {
+        name: "Gulab Jamun",
+        diettype: "veg",
+        variant: ["carbs", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Milk powder, all-purpose flour, ghee, sugar, cardamom, rose water",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Kheer",
+        diettype: "veg",
+        variant: ["carbs", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Rice, milk, sugar, cardamom, almonds, pistachios, saffron",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Halwa",
+        diettype: "veg",
+        variant: ["carbs", "healthy-fats"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Semolina or carrots, ghee, sugar, milk, cardamom, nuts",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Laddu",
+        diettype: "veg",
+        variant: ["carbs", "protein"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Gram flour, ghee, powdered sugar, cardamom, nuts",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Kulfi",
+        diettype: "veg",
+        variant: ["calcium", "protein"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Full-fat milk, sugar, cardamom, pistachios, almonds",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Barfi",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Milk, sugar, cardamom, pistachios, silver leaf",
+        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    },
+
+    // Beverages
+    {
+        name: "Lassi",
+        diettype: "veg",
+        variant: ["probiotic", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Yogurt, water, sugar or salt, cardamom, rose water, fruits (optional)",
+        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Masala Chai",
+        diettype: "veg",
+        variant: ["antioxidants", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Tea leaves, milk, sugar, cardamom, ginger, cinnamon, cloves",
+        img: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Nimbu Paani",
+        diettype: "veg",
+        variant: ["vitamin-c", "electrolytes"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Lemon juice, water, sugar, black salt, mint leaves, ice",
+        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Buttermilk",
+        diettype: "veg",
+        variant: ["probiotic", "calcium"],
+        season: "summer",
+        availability: "all-season",
+        ingredients: "Yogurt, water, salt, cumin powder, mint, coriander, ginger",
+        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Aam Panna",
+        diettype: "veg",
+        variant: ["vitamin-c", "electrolytes"],
+        season: "summer",
+        availability: "seasonal",
+        ingredients: "Raw mango, sugar, black salt, mint, cumin powder, water, ice",
+        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+    },
+
+    // Additional Regional Specialties
+    {
+        name: "Tandoori Chicken",
+        diettype: "nonveg",
+        variant: ["protein", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Chicken, yogurt, tandoori masala, ginger-garlic paste, lemon juice, oil",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Seekh Kebab",
+        diettype: "nonveg",
+        variant: ["protein", "iron"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Minced meat, onions, ginger-garlic paste, spices, mint, coriander",
+        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Malai Kofta",
+        diettype: "veg",
+        variant: ["protein", "calcium"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Paneer, potatoes, cashews, cream, tomatoes, onions, spices",
+        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Aloo Paratha",
+        diettype: "veg",
+        variant: ["carbs", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Wheat flour, potatoes, onions, green chilies, coriander, ghee, spices",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    },
+    {
+        name: "Methi Thepla",
+        diettype: "veg",
+        variant: ["iron", "fiber"],
+        season: "winter",
+        availability: "all-season",
+        ingredients: "Wheat flour, fenugreek leaves, yogurt, ginger, green chilies, oil, spices",
+        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+    }
+];
