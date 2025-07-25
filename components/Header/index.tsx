@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Header() {
 
     return (
-        <header className="ml-auto mr-auto pt-5 flex justify-between items-center w-[80%] lg:w-[85%] ">
+        <header className="ml-auto mr-auto pt-5 flex justify-between items-center w-[85%] lg:w-[85%] ">
             <ul >
                 <Image src="/assets/Icon.svg" alt="Logo" width={200} height={200} />
             </ul>
