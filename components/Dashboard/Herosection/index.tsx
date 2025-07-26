@@ -22,7 +22,11 @@ import Suggestions from "../Suggestions";
 
 export type RecipeFromTypes = z.infer<typeof RecipeFrom>
 
-export default function Herosection() {
+type Props = {
+    dishname: string | null
+}
+
+export default function Herosection({ dishname }: Props) {
     const { handleSubmit, setValue, watch } = useForm({
         resolver: zodResolver(RecipeFrom),
         defaultValues: {
@@ -61,6 +65,11 @@ export default function Herosection() {
         GenerateSuggestionByKey(dish);
     }, [dish]);
 
+    useEffect(() => {
+        if (!dishname) return
+        setValue("dish", dishname)
+    }, [dishname])
+
 
     const OnSubmit = async (data: RecipeFromTypes) => {
         console.log("Form Data:", data);
@@ -98,7 +107,7 @@ export default function Herosection() {
                     <Input placeholder={placeholders[placeholderIndex]} value={dish} onChange={(e) => setValue("dish", e.target.value)} className=" bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#F2C100] text-[#404040] lg:max-w-[121px] shadow-md">See Recipe</Button>
                 </div>
-                <div className="flex ml-2 gap-2  md:gap-4 justify-center md:justify-start">
+                <div className="flex ml-2 md:ml-7 gap-2   md:gap-4 justify-center md:justify-start">
                     <Select value={DishType} onValueChange={(value) => setValue("DishType", value)}>
                         <SelectTrigger className={`bg-white rounded-md  ${DishType ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
                             <SelectValue placeholder="Diet Type" />

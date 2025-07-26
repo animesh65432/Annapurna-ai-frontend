@@ -6,15 +6,18 @@ import {
 } from "@/components/ui/sheet";
 import { XIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Header() {
 
     return (
         <header className="ml-auto mr-auto pt-5 flex justify-between items-center w-[85%]  ">
-            <ul >
-                <Image src="/assets/Icon.svg" alt="Logo" width={200} height={200} />
-            </ul>
+            <Link href="/">
+                <ul >
+                    <Image src="/assets/Icon.svg" alt="Logo" width={200} height={200} />
+                </ul>
+            </Link>
             <ul className=" hidden md:flex gap-8 items-center text-[1rem] ">
                 <li className="text-[#353535]">Explore</li>
                 <li className="text-[#353535]">Save</li>

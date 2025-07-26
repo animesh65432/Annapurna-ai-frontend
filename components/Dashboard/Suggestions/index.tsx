@@ -5,6 +5,9 @@ type Props = {
     setValue: UseFormSetValue<RecipeFromTypes>
 }
 export default function Suggestions({ suggestions, setValue }: Props) {
+    if (suggestions.length === 5) {
+        return
+    }
     return (
         <div className="absolute z-50 left-1 sm:left-1 md:left-7 lg:left-2 top-10 bg-white shadow-md rounded-md w-[100%] sm:w-[100%] md:w-[300px] lg:w-[341px]">
             {suggestions.map((suggestion, index) => (

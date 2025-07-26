@@ -6,15 +6,19 @@ import {
 } from "@/components/ui/sheet";
 import { XIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 
 export default function Header() {
-
+    console.log("hello")
     return (
         <header className="ml-auto mr-auto pt-5 flex justify-between items-center w-[80%]  md:max-w-[75%] lg:max-w-[740px] xl:max-w-[1120px]">
-            <ul >
-                <Image src="/assets/Icon.svg" alt="Logo" width={200} height={200} />
-            </ul>
+            <Link href="/">
+                <ul >
+                    <Image src="/assets/Icon.svg" alt="Logo" width={200} height={200} />
+                </ul>
+            </Link>
             <ul className=" hidden md:flex gap-8 items-center text-[1rem] ">
                 <li className="text-[#353535]">Explore</li>
                 <li className="text-[#353535]">Save</li>
@@ -36,7 +40,7 @@ export default function Header() {
                             <XIcon className="size-8 text-[#048452] ml-auto " />
                         </SheetClose>
                         <nav className="flex  font-poppins text-[1rem] text-[#048452] font-medium flex-col justify-center items-center gap-8">
-                            <ul>Explore</ul>
+                            <ul> <Link href="/Explore">Explore</Link></ul>
                             <ul>Save</ul>
                         </nav>
                     </SheetContent>
