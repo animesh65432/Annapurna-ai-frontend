@@ -60,7 +60,7 @@ export default function MobileSearch() {
         <>
             {!toggleSearch && (
                 <div className="flex md:hidden">
-                    <Search className="absolute text-black left-[10%] translate-y-3" />
+                    <Search className="absolute text-black left-[14%] translate-y-3" />
                     <Input
                         onClick={() => settootleserch(true)}
                         placeholder="start your search"

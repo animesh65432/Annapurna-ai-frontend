@@ -20,7 +20,9 @@ export default function Header() {
                 </ul>
             </Link>
             <ul className=" hidden md:flex gap-8 items-center text-[1rem] ">
-                <li className="text-[#353535]">Explore</li>
+                <Link href="/Explore">
+                    <li className="text-[#353535]">Explore</li>
+                </Link>
                 <li className="text-[#353535]">Save</li>
             </ul>
             <ul className="md:hidden block">

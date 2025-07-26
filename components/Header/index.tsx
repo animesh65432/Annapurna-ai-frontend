@@ -19,7 +19,9 @@ export default function Header() {
                 </ul>
             </Link>
             <ul className=" hidden md:flex gap-8 items-center text-[1rem] ">
-                <li className="text-[#353535]">Explore</li>
+                <Link href="/Explore">
+                    <li className="text-[#353535]">Explore</li>
+                </Link>
                 <li className="text-[#353535]">Save</li>
             </ul>
             <ul className="md:hidden block">
@@ -39,7 +41,9 @@ export default function Header() {
                             <XIcon className="size-8 text-[#048452] ml-auto " />
                         </SheetClose>
                         <nav className="flex  font-poppins text-[1rem] text-[#048452] font-medium flex-col justify-center items-center gap-8">
-                            <ul>Explore</ul>
+                            <Link href="/Explore">
+                                <ul>Explore</ul>
+                            </Link>
                             <ul>Save</ul>
                         </nav>
                     </SheetContent>

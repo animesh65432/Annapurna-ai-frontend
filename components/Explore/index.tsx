@@ -9,26 +9,21 @@ import ShowResult from "./ShowResult";
 import { useExploreContext } from "@/context";
 
 export default function ExploreComponent() {
-    const { Isfiltering } = useExploreContext()
+    const { Isfiltering } = useExploreContext();
+
     return (
-        <div className="bg-white flex min-h-dvh overflow-y-auto w-full  flex-col  gap-5  lg:gap-8">
-            <Header />
-            <SearchinInputBox />
-            <MobileSearch />
-            {!Isfiltering &&
-                <Nonvegetarian />
-            }
-            {!Isfiltering &&
-                <Veg />
-            }
-            {!Isfiltering &&
-                <SummerDishes />
-            }
-            {!Isfiltering &&
-                <WinterDishes />}
+        <div className="bg-white flex min-h-dvh overflow-y-auto w-full flex-col gap-10 lg:gap-8 pt-[220px]">
+            <div className="flex flex-col gap-6 md:gap-10 fixed top-0 left-0 right-0 z-50 bg-slate-50 p-5">
+                <Header />
+                <SearchinInputBox />
+                <MobileSearch />
+            </div>
+
+            {!Isfiltering && <Nonvegetarian />}
+            {!Isfiltering && <Veg />}
+            {!Isfiltering && <SummerDishes />}
+            {!Isfiltering && <WinterDishes />}
             {Isfiltering && <ShowResult />}
-
         </div>
-
     );
 }
