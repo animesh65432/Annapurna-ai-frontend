@@ -12,7 +12,7 @@ export default function ExploreComponent() {
     const { Isfiltering } = useExploreContext();
 
     return (
-        <div className="bg-white flex min-h-dvh overflow-y-auto w-full flex-col gap-10 lg:gap-8 pt-[220px]">
+        <div className="bg-[url('/dashboard/backgroundimage.png')] flex min-h-dvh overflow-y-auto w-full flex-col gap-10 lg:gap-8 pt-[220px]">
             <div className="flex flex-col gap-6 md:gap-10 fixed top-0 left-0 right-0 z-50 bg-slate-50 p-5">
                 <Header />
                 <SearchinInputBox />

@@ -7,7 +7,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { ChevronRight } from "lucide-react"
+
 
 export default function Nonvegetarian() {
     const indianNonVegDishes = indianDishes.filter((dish) => dish.diettype === "nonveg")
@@ -16,7 +16,6 @@ export default function Nonvegetarian() {
         <div className="flex flex-col gap-5 ml-auto mr-auto pt-5 w-[85%] sm:w-[80%] lg:w-[85%]">
             <h1 className="text-[#565656] font-bold text-xl sm:text-2xl mb-4 flex items-center">
                 Non vegetarian dishes
-                <ChevronRight />
             </h1>
 
             <Carousel opts={{ align: "start" }} className="w-full relative">

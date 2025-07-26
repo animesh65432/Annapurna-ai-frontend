@@ -5,7 +5,7 @@ import InputIcon from "@/public/assets/dashboard/Vector.svg"
 import Image from "next/image"
 import { Search } from "lucide-react"
 import { useExploreContext } from "@/context"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { indianDishes } from "@/lib/Herosectiondata"
 
 export default function SearchinInputBox() {
@@ -13,7 +13,7 @@ export default function SearchinInputBox() {
     const [DietType, SetDietType] = useState<string>("")
     const [Nutrient, setNutrient] = useState<string>("")
     const { setIsfiltering, setdish: setIndiandish, dish: Indiandish } = useExploreContext()
-    useEffect(() => {
+    const handleserch = () => {
         const isFiltering = dish.length > 0 || Nutrient.length > 0 || DietType.length > 0;
         setIsfiltering(isFiltering);
 
@@ -39,16 +39,14 @@ export default function SearchinInputBox() {
         } else {
             setIndiandish(Indiandish);
         }
-    }, [dish, DietType, Nutrient]);
-
-    console.log(Nutrient)
+    }
     return (
         <div className="w-full flex justify-center ">
             <div className=" hidden md:flex  rounded-4xl h-[8vh] items-center w-[75%] lg:w-[63%] xl:w-[55%] bg-white shadow-md border-2 border-neutral-100 text-black">
                 <Image src={InputIcon} alt="inputicon" className="w-[2vw] h-[3vh] ml-5" />
                 <Input value={dish} onChange={(e) => setdish(e.target.value)} className="border-0 bg-transparent shadow-none  w-[40%] lg:w-[45%] " placeholder="Write Dish name" />
                 <Select value={DietType} onValueChange={(value) => SetDietType(value)}>
-                    <SelectTrigger className="border-t-0 border-r-0 border-b-0  bg-transparent shadow-none w-[20%]">
+                    <SelectTrigger className="border-t-0 border-r-0 border-b-0 cursor-pointer  bg-transparent shadow-none w-[20%]">
                         <SelectValue placeholder="Diet Type" />
                     </SelectTrigger>
                     <SelectContent >
@@ -58,7 +56,7 @@ export default function SearchinInputBox() {
                     </SelectContent>
                 </Select>
                 <Select value={Nutrient} onValueChange={(value) => setNutrient(value)} >
-                    <SelectTrigger className="border-t-0 border-r-0 border-b-0 rounded-0 bg-transparent shadow-none w-[20%]">
+                    <SelectTrigger className="border-t-0 cursor-pointer border-r-0 border-b-0 rounded-0 bg-transparent shadow-none w-[20%]">
                         <SelectValue placeholder="Nutrient Focus" />
                     </SelectTrigger>
                     <SelectContent className="">
@@ -67,8 +65,8 @@ export default function SearchinInputBox() {
                         ))}
                     </SelectContent>
                 </Select>
-                <div className="flex ml-[5%] lg:ml-[2%] bg-[#168B5D] text-white rounded-3xl p-2">
-                    <Search />
+                <div className="flex cursor-pointer ml-[5%] lg:ml-[2%] bg-[#168B5D] text-white rounded-3xl p-2">
+                    <Search onClick={handleserch} />
                 </div>
             </div>
         </div>

@@ -12,10 +12,9 @@ import { ChevronRight } from "lucide-react"
 export default function WinterDishes() {
     const IndianWinterDishes = indianDishes.filter((dish) => dish.season === "winter")
     return (
-        <div className="bg-white flex flex-col gap-5 ml-auto mr-auto pt-5 w-[85%] sm:w-[80%] lg:w-[85%]">
+        <div className=" flex flex-col gap-5 ml-auto mr-auto pt-5 w-[85%] sm:w-[80%] lg:w-[85%]">
             <h1 className="text-[#565656] font-bold text-xl sm:text-2xl mb-4 flex items-center">
                 Cozy Winter Dishes
-                <ChevronRight />
             </h1>
 
             <Carousel opts={{ align: "start" }} className="w-full relative">

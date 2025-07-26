@@ -114,7 +114,7 @@ export default function Herosection({ dishname }: Props) {
                 </div>
                 <div className="flex ml-2 md:ml-7 gap-2   md:gap-4 justify-center md:justify-start">
                     <Select value={DishType} onValueChange={(value) => setValue("DishType", value)}>
-                        <SelectTrigger className={`bg-white rounded-md  ${DishType ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
+                        <SelectTrigger className={`bg-white rounded-md cursor-pointer  ${DishType ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
                             <SelectValue placeholder="Diet Type" />
                         </SelectTrigger>
                         <SelectContent >
@@ -124,7 +124,7 @@ export default function Herosection({ dishname }: Props) {
                         </SelectContent>
                     </Select>
                     <Select value={Nutrient} onValueChange={(value) => setValue("Nutrient", value)}>
-                        <SelectTrigger className={`bg-white rounded-md ${Nutrient ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
+                        <SelectTrigger className={`bg-white cursor-pointer rounded-md ${Nutrient ? "text-[#168B5D] border-[#168B5D]" : "text-[#4A4A4A]"}`}>
                             <SelectValue placeholder="Nutrient Focus" />
                         </SelectTrigger>
                         <SelectContent className="">
