@@ -1,5 +1,4 @@
 import type { NextConfig } from 'next'
-// Import the i18n config
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -7,8 +6,9 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["images.unsplash.com"]
+    unoptimized: true
   }
 }
+
 
 export default nextConfig

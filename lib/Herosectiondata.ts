@@ -484,7 +484,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mutton, yogurt, onions, ginger, garlic, red chilies, fennel powder, garam masala",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://www.whiskaffair.com/wp-content/uploads/2019/02/Mutton-Rogan-Josh-2-3.jpg"
     },
     {
         name: "Palak Paneer",
@@ -493,7 +493,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Spinach, paneer, onions, tomatoes, ginger, garlic, cream, spices",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmW5957i0DRg1p3raZP_hj6xa4dgd2Hye_A&s"
     },
     {
         name: "Matar Paneer",
@@ -502,7 +502,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Green peas, paneer, onions, tomatoes, ginger, garlic, garam masala, cream",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwgDjjeDBhjYECMNvwg2Zoq1JeSexFTAsfQ&s"
     },
     {
         name: "Shahi Paneer",
@@ -511,7 +511,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Paneer, cashews, cream, onions, tomatoes, ginger, garlic, royal spices",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://tiffinandteaofficial.com/wp-content/uploads/2020/07/Untitled-1.jpg"
     },
     {
         name: "Chicken Curry",
@@ -520,7 +520,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Chicken, onions, tomatoes, ginger, garlic, turmeric, red chili powder, garam masala",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Chicken-Curry-Recipe.jpg"
     },
 
     // South Indian Dishes
@@ -540,7 +540,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice, urad dal, fenugreek seeds, salt, oil for cooking",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://www.cubesnjuliennes.com/wp-content/uploads/2023/10/Best-Crispy-Plain-Dosa-Recipe.jpg"
     },
     {
         name: "Uttapam",
@@ -549,7 +549,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Dosa batter, onions, tomatoes, green chilies, coriander, curry leaves",
-        img: "https://images.unsplash.com/photo-1630294277842-4d98b22cbcfc?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9tmanikEhiMSQxYM8Z_csTGqT_VRXTaKRQ&s"
     },
     {
         name: "Vada",
@@ -558,7 +558,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Urad dal, ginger, green chilies, curry leaves, black pepper, asafoetida",
-        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Medu_Vadas.JPG/960px-Medu_Vadas.JPG"
     },
     {
         name: "Rasam",
@@ -567,7 +567,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Tomatoes, tamarind, toor dal, black pepper, cumin, curry leaves, coriander",
-        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+        img: "https://www.ice.edu/sites/default/files/inline-images/rasam%20web.jpg"
     },
     {
         name: "Coconut Rice",
@@ -576,7 +576,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice, fresh coconut, curry leaves, mustard seeds, urad dal, green chilies",
-        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+        img: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/coconut-rice.jpg"
     },
     {
         name: "Curd Rice",
@@ -585,7 +585,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice, yogurt, mustard seeds, curry leaves, ginger, green chilies, coriander",
-        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+        img: "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/curd-rice-thayir-sadam.jpg"
     },
     {
         name: "Fish Curry",
@@ -594,7 +594,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Fish, coconut milk, tamarind, curry leaves, mustard seeds, red chilies, turmeric",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://www.licious.in/blog/wp-content/uploads/2022/03/shutterstock_1891229335-min.jpg"
     },
     {
         name: "Appam",
@@ -603,7 +603,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice, coconut milk, palm toddy or yeast, sugar, salt",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg"
     },
     {
         name: "Puttu",
@@ -612,7 +612,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice flour, fresh coconut, salt, water",
-        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+        img: "https://www.clubmahindra.com/blog/media/section_images/ajourneyin-b1a9b6850cc6a2d.jpg"
     },
     {
         name: "Masala Dosa",
@@ -621,7 +621,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Dosa batter, potatoes, onions, mustard seeds, curry leaves, turmeric, green chilies",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2015/12/Masala-Dosa-L1.jpg?resize=600%2C900&ssl=1"
     },
     {
         name: "Rava Dosa",
@@ -630,7 +630,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Semolina, rice flour, all-purpose flour, yogurt, onions, ginger, green chilies",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://cookingfromheart.com/wp-content/uploads/2017/07/Instant-Oats-Rava-Dosa-5.jpg"
     },
     {
         name: "Mysore Pak",
@@ -639,7 +639,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Gram flour, ghee, sugar, cardamom powder",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://indiasweethouse.in/cdn/shop/files/BadamMysorePak_eec04e7e-ba9b-41bd-90c1-e07dfeabef14.png?v=1724998308"
     },
     {
         name: "Payasam",
@@ -648,7 +648,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice or vermicelli, milk, jaggery, cardamom, cashews, raisins, ghee",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://images.getrecipekit.com/20231006064107-kerala-20special-20payasam.jpg?aspect_ratio=4:3&quality=90&"
     },
     {
         name: "Upma",
@@ -657,7 +657,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Semolina, onions, green chilies, ginger, curry leaves, mustard seeds, cashews",
-        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+        img: "https://www.maggi.in/sites/default/files/srh_recipes/5f1439c480c484bacc2fcc13ac018173.jpg"
     },
 
     // West Indian Dishes
@@ -668,7 +668,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mixed vegetables, butter, onions, tomatoes, pav bhaji masala, bread rolls",
-        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/17223838/pexels-photo-17223838.jpeg"
     },
     {
         name: "Vada Pav",
@@ -677,7 +677,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Potatoes, gram flour, green chilies, ginger, bread rolls, chutneys",
-        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/17433337/pexels-photo-17433337.jpeg"
     },
     {
         name: "Dhokla",
@@ -686,7 +686,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Gram flour, yogurt, ginger, green chilies, mustard seeds, curry leaves, coriander",
-        img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+        img: "https://rakskitchen.net/wp-content/uploads/2011/09/khaman-besan.jpg"
     },
     {
         name: "Khandvi",
@@ -695,16 +695,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Gram flour, yogurt, ginger, green chilies, mustard seeds, curry leaves, coconut",
-        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
-    },
-    {
-        name: "Gujarati Thali",
-        diettype: "veg",
-        variant: ["protein", "fiber"],
-        season: "winter",
-        availability: "all-season",
-        ingredients: "Dal, sabzi, roti, rice, farsan, pickles, papad, sweet, buttermilk",
-        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnTwTQbwOo7g4lO1Nu5x4DF6VBxNFfa7h2Vw&s"
     },
     {
         name: "Undhiyu",
@@ -713,7 +704,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mixed winter vegetables, methi muthiya, groundnuts, coconut, spices",
-        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs18_gDMqdxEGP_AUMrzkU4ET_XFYfVEr9QQ&s"
     },
     {
         name: "Fafda",
@@ -722,7 +713,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Gram flour, turmeric, carom seeds, black pepper, oil for frying",
-        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NTcaisWX7NqHDUbllnU4Ez16nbHS7N13xw&s"
     },
     {
         name: "Handvo",
@@ -731,7 +722,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mixed lentils, rice, bottle gourd, yogurt, ginger, green chilies, sesame seeds",
-        img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+        img: "https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2023/09/Gujarati-Handvo-H2.jpg?resize=600%2C904&ssl=1"
     },
     {
         name: "Puran Poli",
@@ -740,7 +731,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Wheat flour, chana dal, jaggery, cardamom, nutmeg, ghee",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://static.toiimg.com/thumb/55045560.cms?width=1200&height=900"
     },
     {
         name: "Misal Pav",
@@ -749,7 +740,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mixed sprouts, onions, tomatoes, misal masala, farsan, bread rolls, chutneys",
-        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+        img: "https://d34vm3j4h7f97z.cloudfront.net/optimized/3X/1/3/13c0d443dfbf09a6b2e789da0f12617be57339eb_2_572x500.jpeg"
     },
     {
         name: "Thepla",
@@ -758,7 +749,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Wheat flour, fenugreek leaves, yogurt, ginger, green chilies, turmeric, oil",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO923orecOfHhYubEpSGbs65x8rs6_cDiWkg&s"
     },
     {
         name: "Khakhra",
@@ -767,7 +758,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Wheat flour, oil, salt, carom seeds, sesame seeds",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://www.sartajonline.com/cdn/shop/products/KHAKHRAMETHI11.jpg?v=1596871327"
     },
     {
         name: "Dabeli",
@@ -776,7 +767,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Potatoes, dabeli masala, tamarind chutney, peanuts, pomegranate, sev, bread",
-        img: "https://images.unsplash.com/photo-1626132647523-66f689450685?w=400&h=300&fit=crop"
+        img: "https://ministryofcurry.com/wp-content/uploads/2024/05/dabeli-5.jpg"
     },
     {
         name: "Kachori",
@@ -785,17 +776,9 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "All-purpose flour, lentil filling, ginger, green chilies, spices, oil for frying",
-        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+        img: "https://www.chefkunalkapur.com/wp-content/uploads/2023/11/DSC08208-1300x731.jpg?v=1699513010"
     },
-    {
-        name: "Jalebi",
-        diettype: "veg",
-        variant: ["carbs", "sugar"],
-        season: "winter",
-        availability: "all-season",
-        ingredients: "All-purpose flour, yogurt, saffron, sugar, cardamom, lemon juice, ghee",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
-    },
+
 
     // East Indian Dishes
     {
@@ -805,7 +788,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Fish fillets, turmeric, red chili powder, ginger-garlic paste, mustard oil, rice flour",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_jkRBlV-TQjXn56fggbgbgi4_j9H2kNmcQ&s"
     },
     {
         name: "Shorshe Ilish",
@@ -814,7 +797,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Hilsa fish, mustard seeds, mustard oil, green chilies, turmeric, salt",
-        img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
+        img: "https://images.slurrp.com/prod/recipe_images/transcribe/side%20dish/Ilish_Bhapa_Shorshe.webp?impolicy=slurrp-20210601&width=1200&height=675"
     },
     {
         name: "Aloo Posto",
@@ -823,7 +806,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Potatoes, poppy seeds, mustard oil, green chilies, turmeric, salt",
-        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+        img: "https://www.whiskaffair.com/wp-content/uploads/2020/06/Bengali-Aloo-Posto-2-3.jpg"
     },
     {
         name: "Kosha Mangsho",
@@ -832,7 +815,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mutton, onions, ginger-garlic paste, yogurt, garam masala, bay leaves, ghee",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ-PpU3PycbIb62NXGz2b-cwDnOAQiV64gQ&s"
     },
     {
         name: "Chingri Malai Curry",
@@ -841,7 +824,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Prawns, coconut milk, onions, ginger, garlic, green chilies, turmeric, garam masala",
-        img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
+        img: "https://atanurrannagharrecipe.com/wp-content/uploads/2023/01/Chingri-Macher-Malai-Curry-Photo-02.jpg"
     },
     {
         name: "Mishti Doi",
@@ -850,7 +833,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Milk, yogurt culture, jaggery or sugar, cardamom",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVtb7T7kHkA_qobyRxoc8jyLEVo4x9fPU2VQ&s"
     },
     {
         name: "Rasgulla",
@@ -859,16 +842,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Chenna (cottage cheese), sugar, water, cardamom, rose water",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
-    },
-    {
-        name: "Sandesh",
-        diettype: "veg",
-        variant: ["protein", "calcium"],
-        season: "summer",
-        availability: "all-season",
-        ingredients: "Fresh chenna, powdered sugar, cardamom, pistachios, saffron",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4prUo53YCYqeHESncN9iA7NRxCCb87oJGA&s"
     },
     {
         name: "Luchi",
@@ -877,7 +851,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "All-purpose flour, salt, ghee, oil for frying",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_oBl_5fv_yazMMpkYMsjkD4yr0O3Xf-vfgA&s"
     },
     {
         name: "Begun Bharta",
@@ -886,19 +860,10 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Eggplant, onions, tomatoes, ginger, garlic, green chilies, mustard oil, spices",
-        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+        img: "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/baingan-bharta-500x375.jpg"
     },
 
     // Street Foods
-    {
-        name: "Samosa",
-        diettype: "veg",
-        variant: ["carbs", "fiber"],
-        season: "winter",
-        availability: "all-season",
-        ingredients: "All-purpose flour, potatoes, peas, onions, cumin, coriander, garam masala, oil",
-        img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop"
-    },
     {
         name: "Pakora",
         diettype: "veg",
@@ -906,7 +871,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Gram flour, onions, potatoes, spinach, green chilies, ginger, spices, oil",
-        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+        img: "https://static01.nyt.com/images/2024/07/25/multimedia/ND-Pakorarex-clfq/ND-Pakorarex-clfq-threeByTwoMediumAt2X.jpg"
     },
     {
         name: "Chaat",
@@ -915,7 +880,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Crispy items, potatoes, onions, chutneys, yogurt, chaat masala, sev, coriander",
-        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7hh_qeNemM83ninycYHcskgIBLlnrdzCeg&s"
     },
     {
         name: "Bhel Puri",
@@ -924,7 +889,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Puffed rice, sev, onions, tomatoes, chutneys, coriander, lemon juice",
-        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+        img: "https://shwetainthekitchen.com/wp-content/uploads/2022/01/bhel-puri.jpg"
     },
     {
         name: "Pani Puri",
@@ -933,7 +898,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Semolina, wheat flour, tamarind, mint, coriander, black salt, chickpeas, potatoes",
-        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/13041629/pexels-photo-13041629.jpeg"
     },
 
     // Rice Dishes
@@ -944,7 +909,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Basmati rice, meat, yogurt, onions, saffron, ghee, biryani spices, mint, coriander",
-        img: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop"
+        img: "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg"
     },
     {
         name: "Vegetable Biryani",
@@ -953,7 +918,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Basmati rice, mixed vegetables, yogurt, onions, saffron, ghee, biryani spices, mint",
-        img: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop"
+        img: "https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg"
     },
     {
         name: "Pulao",
@@ -962,7 +927,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Basmati rice, vegetables, whole spices, ghee, onions, ginger, garlic",
-        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqcuwQw6kCiE25q_KGQtH2du6S0po0CVEeQ&s"
     },
     {
         name: "Jeera Rice",
@@ -971,7 +936,7 @@ export const indianDishes = [
         season: "all-season",
         availability: "all-season",
         ingredients: "Basmati rice, cumin seeds, ghee, bay leaves, salt, water",
-        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+        img: "https://www.vegrecipesofindia.com/wp-content/uploads/2025/05/jeera-rice-1.jpg"
     },
     {
         name: "Lemon Rice",
@@ -980,7 +945,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Rice, lemon juice, mustard seeds, curry leaves, turmeric, peanuts, green chilies",
-        img: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop"
+        img: "https://www.indianveggiedelight.com/wp-content/uploads/2023/03/lemon-rice-stovetop-featured.jpg"
     },
 
     // Bread Items
@@ -991,7 +956,7 @@ export const indianDishes = [
         season: "all-season",
         availability: "all-season",
         ingredients: "All-purpose flour, yogurt, baking powder, salt, ghee, milk",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://www.kingarthurbaking.com/sites/default/files/2021-02/naan-3.jpg"
     },
     {
         name: "Roti",
@@ -1000,7 +965,7 @@ export const indianDishes = [
         season: "all-season",
         availability: "all-season",
         ingredients: "Whole wheat flour, water, salt, ghee or oil",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://cdn.mos.cms.futurecdn.net/z9yrzoMFd7hcFnvjzNjv5P.jpg"
     },
     {
         name: "Paratha",
@@ -1009,7 +974,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Whole wheat flour, ghee, water, salt, stuffing (optional)",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://vaya.in/recipes/wp-content/uploads/2018/02/Paratha.jpg"
     },
     {
         name: "Kulcha",
@@ -1018,7 +983,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "All-purpose flour, yogurt, baking powder, onions, coriander, ghee",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://www.vegrecipesofindia.com/wp-content/uploads/2018/10/kulcha-recipe-1.jpg"
     },
     {
         name: "Bhatura",
@@ -1027,7 +992,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "All-purpose flour, yogurt, baking powder, semolina, oil for frying",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ86EOMP_0NdU7WUcsArBxpqKamJCDMRrkZ0VQHIeeomISID0JMUQHnblBhM24xdRJPB_skO1aX__z9a6S1B-5Jdt0k7NdHBFbkG8eTlSvjsZ55GLDTP1m57D6ju3Nu_aLjGs1Frj-Qkw/s1600/bhatura9.jpg"
     },
     {
         name: "Poori",
@@ -1036,7 +1001,7 @@ export const indianDishes = [
         season: "all-season",
         availability: "all-season",
         ingredients: "Whole wheat flour, salt, oil, water for kneading, oil for frying",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgzk6g7gm-5fquagcVUP4M-jWKBEy7EzKCSg&s"
     },
 
     // Dal Dishes
@@ -1047,7 +1012,7 @@ export const indianDishes = [
         season: "all-season",
         availability: "all-season",
         ingredients: "Toor dal, turmeric, salt, ginger, green chilies, curry leaves, mustard seeds",
-        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+        img: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/moong-dal-recipe.jpg"
     },
     {
         name: "Masoor Dal",
@@ -1056,7 +1021,7 @@ export const indianDishes = [
         season: "all-season",
         availability: "all-season",
         ingredients: "Red lentils, onions, tomatoes, ginger, garlic, turmeric, cumin",
-        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+        img: "https://www.cookwithmanali.com/wp-content/uploads/2025/02/Red-Masoor-Dal-In-a-Pan-topped-with-tadka.jpg"
     },
     {
         name: "Moong Dal",
@@ -1065,7 +1030,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Moong dal, turmeric, ginger, green chilies, curry leaves, mustard seeds",
-        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+        img: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/moong-dal-recipe.jpg"
     },
     {
         name: "Chana Dal",
@@ -1074,7 +1039,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Bengal gram dal, onions, tomatoes, ginger, garlic, garam masala, ghee",
-        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+        img: "https://shwetainthekitchen.com/wp-content/uploads/2023/01/chana-dal.jpg"
     },
 
     // Desserts
@@ -1085,7 +1050,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Milk powder, all-purpose flour, ghee, sugar, cardamom, rose water",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://i0.wp.com/www.chitrasfoodbook.com/wp-content/uploads/2016/10/gulab-jamun-using-mix.jpg?w=1200&ssl=1"
     },
     {
         name: "Kheer",
