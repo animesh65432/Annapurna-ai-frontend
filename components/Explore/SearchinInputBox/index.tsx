@@ -20,10 +20,11 @@ export default function SearchinInputBox() {
         if (isFiltering) {
             const filterdish = indianDishes.filter((d) => {
                 const matchName = dish ? d.name.toLowerCase().includes(dish.toLowerCase()) : true;
-                const matchDiet =
-                    DietType && DietType.toLowerCase() === "all"
-                        ? d.diettype.toLowerCase() === DietType.toLowerCase()
-                        : d;
+                const matchDiet = DietType
+                    ? DietType === "any"
+                        ? true
+                        : d.diettype.toLowerCase() === DietType.toLowerCase()
+                    : true;
 
                 const matchNutrient = Nutrient
                     ? Array.isArray(d.variant) && d.variant.some((n) =>
@@ -40,7 +41,7 @@ export default function SearchinInputBox() {
         }
     }, [dish, DietType, Nutrient]);
 
-    console.log(Indiandish)
+    console.log(Nutrient)
     return (
         <div className="w-full flex justify-center ">
             <div className=" hidden md:flex  rounded-4xl h-[8vh] items-center w-[75%] lg:w-[63%] xl:w-[55%] bg-white shadow-md border-2 border-neutral-100 text-black">
@@ -62,7 +63,7 @@ export default function SearchinInputBox() {
                     </SelectTrigger>
                     <SelectContent className="">
                         {micronutrientIcons.map((micronutrient) => (
-                            <SelectItem key={micronutrient.label} value={micronutrient.label}>{micronutrient.label}</SelectItem>
+                            <SelectItem key={micronutrient.label} value={micronutrient.value}>{micronutrient.label}</SelectItem>
                         ))}
                     </SelectContent>
                 </Select>

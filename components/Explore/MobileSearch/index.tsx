@@ -71,7 +71,7 @@ export default function MobileSearch() {
 
             {toggleSearch && (
                 <>
-                    <div className="fixed inset-0 bg-black/10 z-40 block md:hidden" />
+                    <div className="fixed inset-0 bg-black/10 z-50 block md:hidden" />
 
                     <div ref={modelref} className="flex flex-col gap-10 sm:gap-6  md:gap-5 md:hidden fixed inset-x-0 top-[15vh] w-[90vw] p-7 ml-auto mr-auto rounded-md sm:h-[38vh] z-50 bg-white overflow-auto ">
                         <div>
