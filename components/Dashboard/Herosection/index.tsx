@@ -70,6 +70,11 @@ export default function Herosection({ dishname }: Props) {
         setValue("dish", dishname)
     }, [dishname])
 
+    const onselectfromsuggestions = (dish: string) => {
+        setValue("dish", dish)
+        setsuggestions([])
+    }
+
 
     const OnSubmit = async (data: RecipeFromTypes) => {
         console.log("Form Data:", data);
@@ -102,7 +107,7 @@ export default function Herosection({ dishname }: Props) {
                         <Image src="/assets/dashboard/Vector.svg" alt="InputIcon" fill />
                     </div>
                     {suggestions.length > 0 && dish.length > 0 && (
-                        <Suggestions suggestions={suggestions} setValue={setValue} />
+                        <Suggestions onselectfromsuggestions={onselectfromsuggestions} setsuggestions={setsuggestions} suggestions={suggestions} />
                     )}
                     <Input placeholder={placeholders[placeholderIndex]} value={dish} onChange={(e) => setValue("dish", e.target.value)} className=" bg-white text-[#404040] pl-7 mx-auto text-sm sm:placeholder:text-[1rem] max500:w-[90%] sm:w-[100%] md:w-[300px] lg:w-[341px] placeholder:text-start  " />
                     <Button className="bg-[#FFD059] hidden md:block hover:bg-[#F2C100] text-[#404040] lg:max-w-[121px] shadow-md">See Recipe</Button>
