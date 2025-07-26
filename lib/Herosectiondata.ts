@@ -394,7 +394,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Chicken, butter, tomatoes, cream, onions, garlic, ginger, garam masala, fenugreek leaves",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg"
     },
     {
         name: "Dal Makhani",
@@ -403,7 +403,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Black lentils, kidney beans, butter, cream, tomatoes, onions, garlic, ginger, spices",
-        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/19834445/pexels-photo-19834445.jpeg"
     },
     {
         name: "Paneer Tikka",
@@ -412,7 +412,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Paneer, yogurt, bell peppers, onions, ginger-garlic paste, red chili powder, garam masala",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/20395267/pexels-photo-20395267.jpeg"
     },
     {
         name: "Chicken Tikka Masala",
@@ -421,7 +421,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Chicken tikka, tomatoes, cream, onions, garlic, ginger, spices, cilantro",
-        img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/27848435/pexels-photo-27848435.jpeg"
     },
     {
         name: "Aloo Gobi",
@@ -430,7 +430,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Potatoes, cauliflower, onions, tomatoes, ginger, turmeric, cumin, coriander",
-        img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/8617361/pexels-photo-8617361.jpeg"
     },
     {
         name: "Rajma",
@@ -439,7 +439,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Kidney beans, onions, tomatoes, ginger, garlic, cumin, coriander, garam masala",
-        img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/12737912/pexels-photo-12737912.jpeg"
     },
     {
         name: "Chole Bhature",
@@ -448,7 +448,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Chickpeas, all-purpose flour, yogurt, baking powder, onions, tomatoes, spices",
-        img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg"
     },
     {
         name: "Kadhi Pakora",
@@ -457,7 +457,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Gram flour, yogurt, onions, ginger, green chilies, turmeric, cumin seeds",
-        img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop"
+        img: "https://as2.ftcdn.net/jpg/15/46/83/53/1000_F_1546835364_AK6L3d4HH6JnSrfqOjvCLtzAtOaQfyw2.jpg"
     },
     {
         name: "Sarson da Saag",
@@ -466,7 +466,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Mustard greens, spinach, bathua, onions, ginger, garlic, green chilies, cornmeal",
-        img: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop"
+        img: "https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2016/11/Sarson-Ka-Saag-H1.jpg?resize=600%2C900&ssl=1"
     },
     {
         name: "Makki di Roti",
@@ -475,7 +475,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Corn flour, water, salt, ghee for cooking",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/9419194/pexels-photo-9419194.jpeg"
     },
     {
         name: "Rogan Josh",
@@ -1094,7 +1094,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Rice, milk, sugar, cardamom, almonds, pistachios, saffron",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://i.pinimg.com/736x/be/d1/bd/bed1bd3928c545315409ae89bf314eed.jpg"
     },
     {
         name: "Halwa",
@@ -1103,16 +1103,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Semolina or carrots, ghee, sugar, milk, cardamom, nuts",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
-    },
-    {
-        name: "Laddu",
-        diettype: "veg",
-        variant: ["carbs", "protein"],
-        season: "winter",
-        availability: "all-season",
-        ingredients: "Gram flour, ghee, powdered sugar, cardamom, nuts",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://www.whiskaffair.com/wp-content/uploads/2019/05/Gajar-Ka-Halwa-2-3.jpg"
     },
     {
         name: "Kulfi",
@@ -1121,7 +1112,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Full-fat milk, sugar, cardamom, pistachios, almonds",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://recipes.timesofindia.com/thumb/84786580.cms?width=1200&height=900"
     },
     {
         name: "Barfi",
@@ -1130,7 +1121,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Milk, sugar, cardamom, pistachios, silver leaf",
-        img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+        img: "https://www.sanjanafeasts.co.uk/wp-content/uploads/2020/10/IMG_0011_2-2-500x500.jpg"
     },
 
     // Beverages
@@ -1141,7 +1132,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Yogurt, water, sugar or salt, cardamom, rose water, fruits (optional)",
-        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+        img: "https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured.jpg"
     },
     {
         name: "Masala Chai",
@@ -1150,7 +1141,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Tea leaves, milk, sugar, cardamom, ginger, cinnamon, cloves",
-        img: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jP4Dd4hpBtcN6k02caLWC5Y67-i5Ps6n2w&s"
     },
     {
         name: "Nimbu Paani",
@@ -1159,7 +1150,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Lemon juice, water, sugar, black salt, mint leaves, ice",
-        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+        img: "https://i0.wp.com/www.lovelaughmirch.com/wp-content/uploads/2015/06/NimbuPani_Cardamom-Limeade_2.jpg"
     },
     {
         name: "Buttermilk",
@@ -1168,7 +1159,7 @@ export const indianDishes = [
         season: "summer",
         availability: "all-season",
         ingredients: "Yogurt, water, salt, cumin powder, mint, coriander, ginger",
-        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+        img: "https://consumer-voice.org/wp-content/uploads/2023/04/Buttermilk-A-Refreshing-Summer-Drink.jpg"
     },
     {
         name: "Aam Panna",
@@ -1177,7 +1168,7 @@ export const indianDishes = [
         season: "summer",
         availability: "seasonal",
         ingredients: "Raw mango, sugar, black salt, mint, cumin powder, water, ice",
-        img: "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&h=300&fit=crop"
+        img: "https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2016/05/Pudina-Aam-Panna-H1-1.jpg?fit=600%2C900&ssl=1"
     },
 
     // Additional Regional Specialties
@@ -1188,7 +1179,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Chicken, yogurt, tandoori masala, ginger-garlic paste, lemon juice, oil",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/12737811/pexels-photo-12737811.jpeg"
     },
     {
         name: "Seekh Kebab",
@@ -1197,7 +1188,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Minced meat, onions, ginger-garlic paste, spices, mint, coriander",
-        img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/604660/pexels-photo-604660.jpeg"
     },
     {
         name: "Malai Kofta",
@@ -1206,7 +1197,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Paneer, potatoes, cashews, cream, tomatoes, onions, spices",
-        img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT8TUD-NzEQeESGXCTvbEFMbcMp-heDW-Kw&s"
     },
     {
         name: "Aloo Paratha",
@@ -1215,7 +1206,7 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Wheat flour, potatoes, onions, green chilies, coriander, ghee, spices",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/12737919/pexels-photo-12737919.jpeg"
     },
     {
         name: "Methi Thepla",
@@ -1224,6 +1215,6 @@ export const indianDishes = [
         season: "winter",
         availability: "all-season",
         ingredients: "Wheat flour, fenugreek leaves, yogurt, ginger, green chilies, oil, spices",
-        img: "https://images.unsplash.com/photo-1574653462307-956a0a59de95?w=400&h=300&fit=crop"
+        img: "https://images.pexels.com/photos/20408432/pexels-photo-20408432.jpeg"
     }
 ];
