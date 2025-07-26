@@ -10,6 +10,13 @@ export default function ExploreId() {
     const router = useRouter();
     const { name } = router.query;
     const IndianDish = indianDishes.filter((dish) => dish.name === name)
+
+    const redirect_to = (dishName: string) => {
+        router.push({
+            pathname: '/',
+            query: { dishname: dishName },
+        })
+    }
     return <>
         {IndianDish.length > 0 ?
             <div className=" bg-[url('/dashboard/backgroundimage.png')] min-h-dvh flex flex-col gap-10">
@@ -36,7 +43,7 @@ export default function ExploreId() {
                         </div>
                     </div>
                     <div className='flex w-full justify-end'>
-                        <Button className='bg-[#FFD059] hover:bg-[#cdb169] p-5 text-black'>See Recipe</Button>
+                        <Button onClick={() => redirect_to(IndianDish[0].name)} className='bg-[#FFD059] hover:bg-[#cdb169] p-5 text-black'>See Recipe</Button>
                     </div>
                 </div>
             </div > : null
