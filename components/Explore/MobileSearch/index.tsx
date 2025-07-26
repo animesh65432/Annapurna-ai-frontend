@@ -64,7 +64,7 @@ export default function MobileSearch() {
                     <Input
                         onClick={() => settootleserch(true)}
                         placeholder="start your search"
-                        className="w-[85%] ml-auto mr-auto h-[6vh] rounded-2xl text-white relative placeholder:text-black placeholder:pl-[80%]"
+                        className="w-[85%] ml-auto mr-auto h-[6vh] rounded-2xl text-white relative placeholder:text-black placeholder:pl-[10%]"
                     />
                 </div>
             )}
